@@ -76,7 +76,7 @@ const TodoList = () => {
   const [filter, setFilter] = useState<FilterType>('all');
   const [categories, setCategories] = useState<Category[]>(() => {
     const stored = localStorage.getItem('categories');
-    return stored ? JSON.parse(stored) : [];
+    return stored ? JSON.parse(stored) : DEFAULT_CATEGORIES;
   });
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [deletingId, setDeletingId] = useState<number | null>(null);
