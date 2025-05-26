@@ -59,10 +59,7 @@ type EmojiCategory = keyof typeof CATEGORY_EMOJIS;
 type SortMethod = 'newest' | 'oldest' | 'alphabetical' | 'completed' | 'priority';
 type ValidationError = string | null;
 
-// Save a string to localStorage
-const saveStringToLocalStorage = (string: string) => {
-  localStorage.setItem("string", JSON.stringify(string));
-};
+
 
 // Add the All tasks category constant
 const ALL_TASKS_CATEGORY = { id: 'all', name: 'All tasks', icon: '📋' };
