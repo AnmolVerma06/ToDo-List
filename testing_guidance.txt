@@ -1,0 +1,124 @@
+# Todo List Application - Testing Guidance
+
+## Overview
+This document provides guidance for testing the Todo List application, covering all its features and functionality. Follow these steps to ensure the application works as expected.
+
+## Core Features to Test
+
+### 1. Task Management
+- **Adding Tasks**
+  - Add a task with a short name (2-3 characters)
+  - Add a task with a very long name (approaching 100 characters)
+  - Try adding a task with special characters
+  - Try adding a task with the same name in the same category (should show error)
+  - Try adding a task with filtered words (should be rejected)
+
+- **Completing Tasks**
+  - Mark a task as completed and verify the checkbox works
+  - Verify the task gets visual indication of completion (strikethrough)
+  - Verify progress bar updates correctly
+
+- **Editing Tasks**
+  - Edit an existing task and save changes
+  - Try modifying a task to match another task's name (should show error)
+  - Check validation works (length, special characters, etc.)
+
+- **Deleting Tasks**
+  - Delete individual tasks using the trash icon
+  - Use "Clear completed" to remove multiple completed tasks at once
+
+### 2. Categories
+- **Default Categories**
+  - Verify all default categories are present
+  - Verify selecting different categories shows the correct tasks
+
+- **Adding Categories**
+  - Create a new category with a unique name
+  - Select an emoji from different emoji categories
+  - Try creating a category with a reserved name (should be rejected)
+  - Try creating a category with the same name (should be rejected)
+
+- **Deleting Categories**
+  - Delete a category and verify its tasks are removed
+  - Try to delete the last remaining category (should be prevented)
+
+### 3. Filtering & Sorting
+- **Filters**
+  - Use "All" filter to see all tasks
+  - Use "Active" filter to see only incomplete tasks
+  - Use "Completed" filter to see only completed tasks
+
+- **Sorting**
+  - Test "Newest First" sorting option
+  - Test "Oldest First" sorting option
+  - Test "Alphabetical" sorting option
+  - Test "Incomplete First" sorting option
+
+### 4. Data Persistence
+- **LocalStorage**
+  - Add several tasks and categories, then refresh the page
+  - Verify all data is preserved after refresh
+  - Close the browser completely and reopen, verify data is still there
+  - Use the "Reset App" button to clear all data
+  - Verify default state is restored after reset
+
+### 5. Input Validation
+- **Task Validation**
+  - Try tasks with fewer than 2 characters (should reject)
+  - Try tasks with more than 100 characters (should reject)
+  - Try tasks with forbidden characters (should reject)
+  - Try tasks with profanity (should reject)
+
+- **Category Validation**
+  - Try categories with fewer than 2 characters (should reject)
+  - Try categories with more than 20 characters (should reject)
+  - Try categories with special characters (should reject)
+  - Try categories with reserved names (should reject)
+
+### 6. UI/UX Features
+- **Animations**
+  - Verify animations when adding a task
+  - Verify animations when completing a task
+  - Verify animations when deleting a task
+  - Verify shake animation when validation errors occur
+
+- **Responsive Design**
+  - Test on desktop (wide screen)
+  - Test on tablet (medium screen)
+  - Test on mobile (narrow screen)
+  - Verify all controls remain accessible and usable
+
+## Edge Cases
+- Add a very large number of tasks (50+) and test performance
+- Add a very large number of categories (20+) and test the category bar
+- Use emojis or special unicode characters in task names
+- Test with browser developer tools to simulate offline mode
+
+## Known Limitations
+- Mobile touch interactions might need refinement
+- No multi-user collaboration features
+- No recurring tasks functionality
+- Task search feature not implemented
+
+## Bug Reporting
+If you encounter any bugs during testing, please document:
+1. Steps to reproduce the issue
+2. Expected behavior
+3. Actual behavior 
+4. Browser and device information
+5. Screenshots if applicable
+
+## Browser Compatibility
+Test on multiple browsers:
+- Chrome
+- Firefox
+- Safari
+- Edge
+
+## Final Checklist
+- All CRUD operations work for both tasks and categories
+- Data persists between page refreshes
+- Validation prevents incorrect inputs
+- UI is responsive across different screen sizes
+- Animations and transitions work smoothly
+- Reset App button works correctly 
