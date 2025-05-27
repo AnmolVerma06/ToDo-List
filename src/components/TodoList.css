@@ -956,4 +956,25 @@
 
 .debug-btn.warn:hover {
   background-color: var(--danger);
+}
+
+.reset-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  background-color: transparent;
+  color: var(--danger);
+  border: 1px solid var(--danger);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transition);
+  font-weight: 600;
+  z-index: 2;
+}
+
+.reset-btn:hover {
+  background-color: var(--danger);
+  color: var(--text);
 } 

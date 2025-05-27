@@ -206,13 +206,22 @@ const TodoList = () => {
       return;
     }
     
+    // Determine the category to assign
+    let assignCategory = selectedCategory;
+    if (
+      assignCategory === 'all' ||
+      !categories.some(cat => cat.id === assignCategory)
+    ) {
+      assignCategory = categories.length > 0 ? categories[0].id : '';
+    }
+    
     // Add new todo
     const newTodo: Todo = {
       id: Date.now(),
       text: inputValue.trim(),
       completed: false,
       createdAt: new Date().toISOString(),
-      categoryId: selectedCategory
+      categoryId: assignCategory
     };
     
     setTodos(prevTodos => [newTodo, ...prevTodos]);
@@ -428,6 +437,15 @@ const TodoList = () => {
     return result;
   })();
 
+  // Add reset handler
+  const handleResetTasks = () => {
+    setTodos([]);
+    setCategories(DEFAULT_CATEGORIES);
+    setSelectedCategory('all');
+    localStorage.setItem('todos', JSON.stringify([]));
+    localStorage.setItem('categories', JSON.stringify(DEFAULT_CATEGORIES));
+  };
+
   useEffect(() => {
     localStorage.setItem('todos', JSON.stringify(todos));
   }, [todos]);
@@ -439,7 +457,10 @@ const TodoList = () => {
   return (
     <div className="app-container">
       <header className="app-header">
-        <h1>TO-DO LIST</h1>
+        <h1 style={{ display: 'inline-block', marginRight: '1rem' }}>TO-DO LIST</h1>
+        <button className="reset-btn" onClick={handleResetTasks} title="Reset all tasks and categories">
+          Reset Tasks
+        </button>
       </header>
       
       <div className="main-content">
