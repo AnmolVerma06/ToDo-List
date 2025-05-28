@@ -49,7 +49,7 @@ Access the deployed application here:
 
 The app has been tested for:
 
-- Task input (short/long names, special characters, duplicates)
+- Task input (short/long names, foul language, duplicates)
 - Task completion, editing, and deletion
 - Progress bar updates
 - Sorting and filtering functionality
