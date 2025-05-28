@@ -9,7 +9,7 @@ A dynamic and responsive ToDo List built using **React.js**. Users can add, comp
 
 - ✅ Add, complete, edit, and delete tasks  
 - 🧹 "Clear Completed" option  
-- ✍️ Input validation (length, duplicates, special characters)  
+- ✍️ Input validation (length, duplicates, foul language)  
 - 📂 Sorting: Newest, Oldest, Alphabetical, Incomplete First  
 - 🔍 Filtering: All, Active, Completed  
 - 💾 Persistent data storage via **localStorage**  
