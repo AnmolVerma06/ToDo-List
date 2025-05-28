@@ -1,61 +1,70 @@
-📝 React ToDo List
-A dynamic ToDo List built with React.js. Add, complete, delete, sort, and filter tasks with persistent storage and input validation. Simple, responsive, and efficient.
 
-🚀 Features
-✅ Add, complete, and delete tasks
+# 📝 React ToDo List
 
-🧹 "Clear Completed" option
+A dynamic and responsive ToDo List built using **React.js**. Users can add, complete, delete, sort, and filter tasks. The app includes input validation and saves data using localStorage.
 
-✍️ Input validation (length, duplicates, special characters)
+---
 
-📂 Sort by Newest, Oldest, A-Z, Incomplete First
+## 🚀 Features
 
-🔍 Filter: All, Active, Completed
+- ✅ Add, complete, edit, and delete tasks  
+- 🧹 "Clear Completed" option  
+- ✍️ Input validation (length, duplicates, special characters)  
+- 📂 Sorting: Newest, Oldest, Alphabetical, Incomplete First  
+- 🔍 Filtering: All, Active, Completed  
+- 💾 Persistent data storage via **localStorage**  
+- ⚛️ Built with React functional components and hooks  
+- 📱 Fully responsive design  
 
-💾 Data persistence via localStorage
+---
 
-⚛️ Built as a modular React component
+## 🛠️ Installation
 
-📱 Fully responsive design
+1. Clone the repository:
 
-🛠️ Installation
-bash
-Copy
-Edit
-git clone https://github.com/AnmolVerma06/ToDo-List.git
-cd ToDo-List
-npm install
-npm start
-Make sure Node.js and npm are installed.
+   ```
+   git clone https://github.com/AnmolVerma06/ToDo-List.git
+   cd ToDo-List
+   ```
 
-✅ Testing Guidance
-Key scenarios tested:
+2. Install dependencies and start the app:
 
-Task addition (short/long names, special characters, duplicates)
+   ```
+   npm install
+   npm start
+   ```
 
-Task completion and progress tracking
+   > Make sure you have **Node.js** and **npm** installed.
 
-Editing and deleting tasks
+---
 
-Category creation, deletion, and emoji selection
+## ✅ Testing Guidance
 
-Sorting and filtering functionality
+The app has been tested for:
 
-localStorage persistence after refresh
+- Task input (short/long names, special characters, duplicates)
+- Task completion, editing, and deletion
+- Progress bar updates
+- Sorting and filtering functionality
+- Adding/deleting categories with emojis
+- Input validation for tasks and categories
+- localStorage persistence on refresh and reopen
+- Responsive layout on desktop, tablet, and mobile
+- Smooth animations and validation feedback
 
-UI responsiveness across devices
+📄 For full testing scenarios, see [`testing_guidance.txt`](./testing_guidance.txt)
 
-Input validations and animations
+---
 
-See full testing details in testing_guidance.txt
+## ⚠️ Known Limitations
 
-⚠️ Known Limitations
-No recurring tasks or search functionality
+- No recurring task or search functionality  
+- Single-user only (no account login)  
+- Some touch interactions may need polishing on mobile  
 
-Single-user only (no login)
+---
 
-Mobile touch experience can be improved
+## 👤 Author
 
-👤 Author
-Anmol Verma
-GitHub Profile
+**Anmol Verma**  
+🔗 [GitHub Profile](https://github.com/AnmolVerma06)
