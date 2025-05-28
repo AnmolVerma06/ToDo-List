@@ -18,6 +18,13 @@ A dynamic and responsive ToDo List built using **React.js**. Users can add, comp
 
 ---
 
+## 🌐 Live Demo
+
+Access the deployed application here:  
+🔗 [https://anmolverma06.github.io/ToDo-List/](https://anmolverma06.github.io/ToDo-List/)
+
+---
+
 ## 🛠️ Installation
 
 1. Clone the repository:
