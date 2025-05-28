@@ -1,83 +1,61 @@
-# React Todo List Application
+📝 React ToDo List
+A dynamic ToDo List built with React.js. Add, complete, delete, sort, and filter tasks with persistent storage and input validation. Simple, responsive, and efficient.
 
-A feature-rich Todo List application built with React and TypeScript that allows users to manage tasks efficiently.
+🚀 Features
+✅ Add, complete, and delete tasks
 
-## Features
+🧹 "Clear Completed" option
 
-- **Add Tasks**: Create new tasks with validation to prevent empty or duplicate entries
-- **Complete Tasks**: Mark tasks as completed with a checkbox
-- **Delete Tasks**: Remove unwanted tasks from the list
-- **Filter Tasks**: View all tasks, only active tasks, or only completed tasks
-- **Sort Tasks**: Sort tasks by newest first, oldest first, or alphabetically
-- **Persistence**: Tasks are saved to localStorage so they persist between page refreshes
-- **Responsive Design**: Works well on both desktop and mobile devices
+✍️ Input validation (length, duplicates, special characters)
 
-## Getting Started
+📂 Sort by Newest, Oldest, A-Z, Incomplete First
 
-### Prerequisites
+🔍 Filter: All, Active, Completed
 
-- Node.js (v14 or higher recommended)
-- npm or yarn
+💾 Data persistence via localStorage
 
-### Installation
+⚛️ Built as a modular React component
 
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd to-do-list
-```
+📱 Fully responsive design
 
-2. Install the dependencies:
-```bash
+🛠️ Installation
+bash
+Copy
+Edit
+git clone https://github.com/AnmolVerma06/ToDo-List.git
+cd ToDo-List
 npm install
-```
+npm start
+Make sure Node.js and npm are installed.
 
-3. Start the development server:
-```bash
-npm run dev
-```
+✅ Testing Guidance
+Key scenarios tested:
 
-4. Open your browser and navigate to the URL provided in the terminal (typically http://localhost:5173)
+Task addition (short/long names, special characters, duplicates)
 
-## Usage
+Task completion and progress tracking
 
-- **Add a Task**: Type a task in the input field and click "Add" or press Enter
-- **Complete a Task**: Click the checkbox next to a task to mark it as completed
-- **Delete a Task**: Click the "Delete" button next to a task to remove it
-- **Filter Tasks**: Use the "All", "Active", and "Completed" buttons to filter tasks
-- **Sort Tasks**: Use the dropdown menu to sort tasks by different criteria
-- **Clear Completed Tasks**: Use the "Clear completed" button to remove all completed tasks at once
+Editing and deleting tasks
 
-## Testing
+Category creation, deletion, and emoji selection
 
-To test the application functionality:
+Sorting and filtering functionality
 
-1. Add a few tasks
-2. Mark some tasks as completed
-3. Test the filtering options
-4. Test the sorting options
-5. Delete a task
-6. Clear all completed tasks
-7. Refresh the page to confirm that tasks persist in localStorage
+localStorage persistence after refresh
 
-## Building for Production
+UI responsiveness across devices
 
-To build the application for production:
+Input validations and animations
 
-```bash
-npm run build
-```
+See full testing details in testing_guidance.txt
 
-The build files will be located in the `dist` directory.
+⚠️ Known Limitations
+No recurring tasks or search functionality
 
-## Technologies Used
+Single-user only (no login)
 
-- React
-- TypeScript
-- Vite
-- CSS
-- LocalStorage API
+Mobile touch experience can be improved
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+👤 Author
+Anmol Verma
+GitHub Profile
